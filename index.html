@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" media="screen and (min-width:1024px)" href="registration_style.css">
+    <link rel="stylesheet" media="screen and (max-width:639px)" href="registration_style_min.css">
+    <link rel="stylesheet" media="screen and (min-width:640px) and (max-width:1023px)" href="registration_style_mid.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration_Form</title>
+</head>
+<body>
+    <div class="slider_img">
+        <img id="slider" alt="slider">
+       <div class="Text">
+        <h1>Yaseen Edustation</h1>
+        <h5>We Make The Expert....</h5>
+       </div>
+    </div>
+
+    <div class="Form">
+        <form action="" method="get">
+            <Label>Registration Form</Label>
+            <div class="inputBox">
+                <span>Name</span><br>
+                <input type="text" name="Name" placeholder="Username">
+            </div>
+            <div class="inputBox">
+                <span>Percentage</span><br>
+                <input type="number" maxlength="3" min="1" name="Percentage" placeholder="Percentage">
+            </div>
+            <div class="inputBox">
+                <span>Degree</span><br>
+                <input type="text" maxlength="10" placeholder="Enter your degree" name="degree">
+            </div>
+            <div class="inputBox">
+                <span>Address</span><br>
+                <input type="text" placeholder="Address" name="Address" min="50">
+            </div>
+            <div class="inputBox">
+                <span>Phone</span><br>
+                <input type="number" placeholder="Phone no" name="Phone" min="10" maxlength="10">
+            </div>
+            <div class="inputBox">
+                <span>Reason</span><br>
+                <textarea name="Reason" id="reason" cols="30" rows="10"></textarea>
+            </div>
+            <div class="inputBox">
+                <input type="submit" id="sub" placeholder="Login">
+            </div>
+        </form>
+    </div>
+
+
+
+    <script>
+        var slider=document.getElementById("slider");
+        var items=[
+            "https://source.unsplash.com/1600x900/?programmer,education",
+            "https://source.unsplash.com/1600x900/?developer",
+            "https://source.unsplash.com/1600x900/?website"
+        ];
+        var i=0;
+        function change()
+        {
+            if(i<3)
+            {
+                console.log(i);
+                slider.src=items[i];
+                i++;
+            }
+            else
+            {
+                i=0;
+            }
+        }
+        setTimeout(change,100)
+        setInterval(change,5000);
+    </script>
+</body>
+</html>
