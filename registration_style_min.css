@@ -1,0 +1,126 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.slider_img
+{
+    width: 100vw;
+    height: 80vh;
+    position: relative;
+}
+
+.slider_img #slider
+{
+    width: 100vw;
+    height: 80vh;
+    z-index: 0;
+}
+
+.slider_img .Text
+{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 20vh;
+    top: 35%;
+    font-size: 1.5rem;
+    justify-content: center;
+    text-align: center;
+}
+
+.slider_img .Text h1{
+    color: rgba(255, 0, 0, 0.685);
+    text-shadow: 5px 5px 3px  rgba(0, 0, 0, 0.822);
+}
+.slider_img .Text h5{
+    color: rgba(252, 246, 246, 0.685);
+    text-shadow: 5px 5px 3px  rgba(0, 0, 0, 0.822);
+}
+
+.Form
+{
+    width: 100vw;
+    height: 100vh;
+    background-image: url("https://source.unsplash.com/1600x900/?school");
+    background-size: 100% 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        flex-direction: column;
+}
+
+.Form form{
+    background: rgba(252, 246, 246, 0.856);    
+    width: auto;
+    height: 80%;
+    display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        flex-direction: column;
+    border-radius: 20px;
+    box-shadow: 20px 20px 20px rgba(0, 0, 0, 0.822);
+    backdrop-filter: blur(2px);
+}
+
+.Form form Label
+{
+    font-size: 40px;
+    font-family: cursive;
+    padding: 10px;
+    color:rgba(19, 17, 17, 0.856);
+    margin: 30px;
+}
+
+.Form form .inputBox
+{
+    position: relative;
+    padding: 5px;
+    width:100%;
+    height: 30%;
+}
+
+.Form form .inputBox span
+{
+    position: absolute;
+    left: 16%;
+    font-size: 18px;
+    font-weight: 500;
+    font-family: cursive;
+    top: -5px;
+    color: rgba(7, 6, 6, 0.63);
+}
+
+.Form form .inputBox input
+{
+    width: 70%;
+    height: 50%;
+    font-weight: 500;
+    box-shadow: 3px 5px 5px rgba(0, 0, 0, 0.486);
+    border: none;
+    padding-left: 10px;
+    border-radius: 10px;
+}
+
+.Form form .inputBox #sub
+{
+    background: rgb(63, 6, 6);
+    outline: none;
+    border: none;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 800;
+    color: rgba(252, 246, 246, 0.856);
+}
+
+.Form form .inputBox #reason
+{
+    width: 70%;
+    border: none;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 20px;
+}
