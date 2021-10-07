@@ -56,7 +56,7 @@
 .Form form{
     background: rgba(252, 246, 246, 0.856);    
     width: auto;
-    height: 80%;
+    height: auto;
     display: flex;
         justify-content: center;
         align-items: center;
@@ -69,29 +69,29 @@
 
 .Form form Label
 {
-    font-size: 40px;
+    font-size: 30px;
     font-family: cursive;
-    padding: 10px;
+    /* padding: 10px; */
     color:rgba(19, 17, 17, 0.856);
-    margin: 30px;
+    margin: 15px;
 }
 
 .Form form .inputBox
 {
     position: relative;
-    padding: 5px;
+    padding: 10px;
     width:100%;
-    height: 30%;
+    height:30%;
 }
 
 .Form form .inputBox span
 {
     position: absolute;
     left: 16%;
-    font-size: 18px;
+    font-size: 13px;
     font-weight: 500;
     font-family: cursive;
-    top: -5px;
+    top: 10px;
     color: rgba(7, 6, 6, 0.63);
 }
 
@@ -114,13 +114,14 @@
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-weight: 800;
     color: rgba(252, 246, 246, 0.856);
+    height: 30px;
 }
 
 .Form form .inputBox #reason
 {
     width: 70%;
     border: none;
-    border-bottom-left-radius: 50px;
+    border-bottom-left-radius: 20px;
     border-bottom-right-radius: 10px;
-    border-top-right-radius: 20px;
+    border-top-right-radius: 10px;
 }
